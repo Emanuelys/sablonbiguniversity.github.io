@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cea mai mare universitate - sablon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACASĂ</a></li>
+                    <li><a href="about.html">DESPRE NOI</a></li>
+                    <li><a href="course.html">CURSURI</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact us</h1>
+    </section>
+
+<!----------Contact us content----------->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.3055397429102!2d26.100106450561253!3d44.426894409972064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ffbd64f8ad0f%3A0x2c40bcbc8abc7207!2sPlaton%20Photography%20-%20Fotograf%20culinar!5e0!3m2!1sro!2sro!4v1672516125912!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Bucuresti, Romania</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <h5>+4 0769 10 10 10</h5>
+                        <p>Monday to Friday 10:00 - 17:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>info@emcoit.ro</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email adress" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send message</button>
+                </form>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<!--------Footer---------->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repudiandae perspiciatis unde, 
+            ex sunt at et<br> assumenda veritatis impedit, labore mollitia dolor totam ratione sint officiis 
+            adipisci beatae sed cupiditate.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by EMCO IT</p>
+
+    </section>
+
+
+
+
+
+
+
+<!-----------JavaScript for Toggle Menu--------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-201px";
+        }
+    </script>
+
+</body>
+</html>
